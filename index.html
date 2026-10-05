@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Inicio | Seguridad Informática</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="wrap">
+                <a class="logo" href="index.html">Seguridad Informática</a>
+                <nav>
+                    <a href="index.html" aria-current="page">Inicio</a>
+                    <a href="certificaciones.html">Certificaciones</a>
+                    <a href="ethical-hacking.html">Ethical Hacking</a>
+                </nav>
+            </div>
+        </header>
+        <div class="hero">
+            <div class="wrap">
+                <div>
+                    <h1>Seguridad informática: cómo cuidar la información sin gastar una fortuna</h1>
+                    <p>Armamos este sitio a partir del libro <em>Seguridad Informática</em>, de Fabián Portantier. Acá vas a encontrar un resumen de lo más importante y la info sobre certificaciones.</p>
+                    <p>
+                        <a class="btn" href="https://drive.google.com/file/d/19-nPqINMqhKb6rBQY4mxZt9-CWTmrsnh/view?usp=sharing" target="_blank" download>Descargar el libro (PDF)</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <main>
+            <section class="block">
+                <div class="wrap">
+                    <h2>Sobre el libro</h2>
+                    <p>El autor es consultor y cuenta cómo se hace la seguridad en la vida real. Explica qué dicen las normas (como la ISO 27001) y también qué se puede hacer cuando no hay mucho dinero. El libro tiene 192 páginas, seis capítulos y un apéndice de Ethical Hacking.</p>
+                    <div class="cols">
+                        <div class="card">
+                            <h3>1. La seguridad informática</h3>
+                            <p>Qué es ser profesional de la seguridad, las certificaciones, la defensa en profundidad y el principio KISS.</p>
+                        </div>
+                        <div class="card">
+                            <h3>2. Gestión de la seguridad</h3>
+                            <p>Cómo detectar riesgos, qué hay que proteger, amenazas, vulnerabilidades, políticas y capacitar al personal.</p>
+                        </div>
+                        <div class="card">
+                            <h3>3. Continuidad del negocio</h3>
+                            <p>Backups, monitoreo, qué hacer ante un incidente y sitios de contingencia.</p>
+                        </div>
+                        <div class="card">
+                            <h3>4. Telecomunicaciones</h3>
+                            <p>Routers, switches, firewalls, wifi y sistemas que detectan intrusos (IDS/IPS).</p>
+                        </div>
+                        <div class="card">
+                            <h3>5. Sistemas operativos</h3>
+                            <p>Windows contra Unix, cómo fortalecer un sistema, malware, backups y autenticación con más de un factor.</p>
+                        </div>
+                        <div class="card">
+                            <h3>6. Nuevas tendencias</h3>
+                            <p>Redes sociales, phishing, spam, VoIP, virtualización, la nube e IPv6.</p>
+                        </div>
+                        <div class="card alt">
+                            <h3>Apéndice: Ethical Hacking</h3>
+                            <p>Cómo se hace una prueba de penetración. <a href="ethical-hacking.html">Ir al resumen</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block">
+                <div class="wrap">
+                    <h2>Sobre el autor</h2>
+                    <p>Fabián Portantier es consultor de seguridad informática y tiene su propia empresa, Portantier Information Security. Trabajó con empresas de telecomunicaciones, bancos y educación. Programa en Python, Ruby, PHP y Perl, y da cursos para certificaciones como CISSP y CEH.</p>
+                    <p>
+                        <a href="certificaciones.html">Mirá qué certificaciones existen</a>
+                    </p>
+                </div>
+            </section>
+        </main>
+        <section class="survey">
+            <div class="wrap">
+                <h2>Encuesta rápida</h2>
+                <p>Contanos qué te pareció esta página. Son pocas preguntas y es anónima.</p>
+                <form id="encuesta" data-pagina="Inicio">
+                    <fieldset>
+                        <legend>¿Qué tan clara te resultó la información?</legend>
+                        <label>
+                            <input type="radio" name="claridad" value="5" required> Muy clara
+                        </label>
+                        <label>
+                            <input type="radio" name="claridad" value="3"> Medianamente clara
+                        </label>
+                        <label>
+                            <input type="radio" name="claridad" value="1"> Poco clara
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>¿Qué te gustaría ver más a fondo?</legend>
+                        <label>
+                            <input type="checkbox" name="interes" value="a"> El contenido de cada capítulo
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interes" value="b"> Certificaciones
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interes" value="c"> Ethical Hacking
+                        </label>
+                    </fieldset>
+                    <p>
+                        <label for="nivel">Tu nivel en seguridad informática</label>
+                        <select id="nivel" name="nivel">
+                            <option>Principiante</option>
+                            <option>Intermedio</option>
+                            <option>Avanzado</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="coment">Comentarios o sugerencias (opcional)</label>
+                        <textarea id="coment" name="comentarios" rows="3"></textarea>
+                    </p>
+                    <button class="btn" type="submit">Enviar encuesta</button>
+                    <p id="gracias" class="ok" hidden>¡Gracias por responder!</p>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="wrap">
+                <h3>Fuente bibliográfica</h3>
+                <p>Portantier, Fabián. <em>Seguridad Informática</em>. Colección Expertos en Tecnología. Buenos Aires: Fox Andina / Dalaga S.A., 2012. 192 p. ISBN 978-987-1857-29-6.</p>
+                <h3>Uso educativo</h3>
+                <p>Esta página fue creada con fines exclusivamente educativos y sin fines de lucro. El contenido es un resumen del libro citado, y todos los derechos pertenecen a su autor y a la editorial. Las técnicas de ethical hacking se presentan con fines de aprendizaje y no deben aplicarse sobre sistemas ajenos sin autorización.</p>
+                <p>
+                    <a href="https://drive.google.com/file/d/19-nPqINMqhKb6rBQY4mxZt9-CWTmrsnh/view?usp=sharing" target="_blank" download>Descargar el libro (PDF)</a>
+                </p>
+            </div>
+        </footer>
+        <script>
+            document.getElementById("encuesta").addEventListener("submit",function(e){e.preventDefault();
+            this.querySelector("button").hidden=true;document.getElementById("gracias").hidden=false;});
+        </script>
+    </body>
+</html>

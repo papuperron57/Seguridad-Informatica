@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ethical Hacking | Seguridad Informática</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="wrap">
+                <a class="logo" href="index.html">Seguridad Informática</a>
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="certificaciones.html">Certificaciones</a>
+                    <a href="ethical-hacking.html" aria-current="page">Ethical Hacking</a>
+                </nav>
+            </div>
+        </header>
+        <div class="hero">
+            <div class="wrap" style="grid-template-columns:1fr">
+                <div>
+                    <h1>Ethical Hacking: aprender a atacar para saber defender</h1>
+                    <p>Los ethical hackers son profesionales que estudian cómo se meten los atacantes en los sistemas. Lo más conocido que hacen es el <strong>Penetration Testing</strong>: simular un ataque de verdad para encontrar las fallas antes de que las encuentre alguien con malas intenciones.</p>
+                </div>
+            </div>
+        </div>
+        <main>
+            <section class="block">
+                <div class="wrap">
+                    <h2>Etapas de un Penetration Test</h2>
+                    <ol class="steps">
+                        <li>
+                            <strong>Reconocimiento:</strong> recopilación de toda la información posible sobre la organización (DNS, direcciones IP, servidor web).
+                        </li>
+                        <li>
+                            <strong>Escaneo:</strong> mediante un escáner de puertos, como Nmap, se identifican los puertos abiertos, junto con los servicios y las versiones en ejecución.
+                        </li>
+                        <li>
+                            <strong>Acceso:</strong> se intenta explotar debilidades o configuraciones incorrectas de los servicios.
+                        </li>
+                        <li>
+                            <strong>Vulnerabilidades y exploits:</strong> un exploit es una herramienta desarrollada para aprovechar una vulnerabilidad específica.
+                        </li>
+                        <li>
+                            <strong>Informes finales:</strong> se elaboran dos: uno técnico, dirigido al personal de IT, y otro ejecutivo, con un lenguaje más simple, dirigido a la gerencia.
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section class="block">
+                <div class="wrap">
+                    <h2>Clasificaciones</h2>
+                    <div class="cols">
+                        <div class="card">
+                            <h3>Interno / externo</h3>
+                            <p>Externo: se realiza desde Internet, de la misma forma en que lo haría un atacante. Interno: se realiza desde dentro de la red, con acceso a una mayor cantidad de dispositivos. Lo recomendable es llevar a cabo ambos.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Caja blanca, negra o gris</h3>
+                            <p>Blanca: se le da información al profesional. Negra: no se le da nada. Gris: se le da solo información básica.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block">
+                <div class="wrap">
+                    <h2>Tipos de escaneo de puertos</h2>
+                    <div class="scroll">
+                        <table class="data">
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Cómo funciona</th>
+                            </tr>
+                            <tr>
+                                <td>SYN</td>
+                                <td>No completa el handshake TCP, así que suele dejar menos rastros en los IDS.</td>
+                            </tr>
+                            <tr>
+                                <td>XMAS Tree</td>
+                                <td>Manda un paquete con los flags FIN, URG y PSH. No funciona en Windows.</td>
+                            </tr>
+                            <tr>
+                                <td>FIN</td>
+                                <td>Parecido a XMAS, pero solo con el flag FIN.</td>
+                            </tr>
+                            <tr>
+                                <td>NULL</td>
+                                <td>Manda un paquete sin ningún flag.</td>
+                            </tr>
+                            <tr>
+                                <td>IDLE</td>
+                                <td>Usa una IP modificada y mira los números de secuencia.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="block">
+                <div class="wrap">
+                    <h2>Advertencia</h2>
+                    <p class="note">Antes de comenzar, es necesario definir el alcance de las pruebas y <strong>firmar un compromiso legal</strong> con la organización. Estas técnicas nunca deben utilizarse con fines malintencionados ni ilegales. (Fuente: apéndice, págs. 172 a 181.)</p>
+                </div>
+            </section>
+        </main>
+        <section class="survey">
+            <div class="wrap">
+                <h2>Encuesta rápida</h2>
+                <p>Contanos qué te pareció esta página. Son pocas preguntas y es anónima.</p>
+                <form id="encuesta" data-pagina="Ethical Hacking">
+                    <fieldset>
+                        <legend>¿Qué tan clara te resultó la información?</legend>
+                        <label>
+                            <input type="radio" name="claridad" value="5" required> Muy clara
+                        </label>
+                        <label>
+                            <input type="radio" name="claridad" value="3"> Medianamente clara
+                        </label>
+                        <label>
+                            <input type="radio" name="claridad" value="1"> Poco clara
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>¿Qué etapa te pareció más interesante?</legend>
+                        <label>
+                            <input type="checkbox" name="interes" value="a"> Reconocimiento y escaneo
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interes" value="b"> Acceso y exploits
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interes" value="c"> Informes finales
+                        </label>
+                    </fieldset>
+                    <p>
+                        <label for="nivel">Tu nivel en seguridad informática</label>
+                        <select id="nivel" name="nivel">
+                            <option>Principiante</option>
+                            <option>Intermedio</option>
+                            <option>Avanzado</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="coment">Comentarios o sugerencias (opcional)</label>
+                        <textarea id="coment" name="comentarios" rows="3"></textarea>
+                    </p>
+                    <button class="btn" type="submit">Enviar encuesta</button>
+                    <p id="gracias" class="ok" hidden>¡Gracias por responder!</p>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="wrap">
+                <h3>Fuente bibliográfica</h3>
+                <p>Portantier, Fabián. <em>Seguridad Informática</em>. Colección Expertos en Tecnología. Buenos Aires: Fox Andina / Dalaga S.A., 2012. 192 p. ISBN 978-987-1857-29-6.</p>
+                <h3>Uso educativo</h3>
+                <p>Esta página fue creada con fines exclusivamente educativos y sin fines de lucro. El contenido es un resumen del libro citado, y todos los derechos pertenecen a su autor y a la editorial. Las técnicas de ethical hacking se presentan con fines de aprendizaje y no deben aplicarse sobre sistemas ajenos sin autorización.</p>
+                <p>
+                    <a href="https://drive.google.com/file/d/19-nPqINMqhKb6rBQY4mxZt9-CWTmrsnh/view?usp=sharing" target="_blank" download>Descargar el libro (PDF)</a>
+                </p>
+            </div>
+        </footer>
+        <script>
+            document.getElementById("encuesta").addEventListener("submit",function(e){e.preventDefault();
+            this.querySelector("button").hidden=true;document.getElementById("gracias").hidden=false;});
+        </script>
+    </body>
+</html>
